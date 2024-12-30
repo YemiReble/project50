@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="static/styles/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/style2.css')}}">
+    <!-- <link rel="shortcut icon" href="static/img/icon.ico"> -->
+    <link rel="shortcut icon" type="icon" href="{{url_for('static', filename='img/icon.ico')}}">
+    <!-- <script src="scripts/"></script> Yet to be completed -->
+    <title>Weather</title>
+</head>
+<body class="bg">
+    <header>
+        <div class="header_container">
+            <h1>Weather Today</h1>
+            <div class="dropdown">
+                <p class="dropbtn">Portfolio<i class="fa fa-caret-down"></i></p>
+                   <div class="dropdown-content">
+                       <a href="https://github.com/yemireble/project50"><h3 class="readme">GitHub</h3></a>
+                   </div>
+           </div>
+       </div>
+    </header>
+    <p class="error">Invalid Name!</p>
+    <p class="parag">Your search result "{{ city }}" is not available. <br>You may reconsider reviewing the name of the city or country you provided and try again.
+        <br>Kindly make sure your search only include a city or a Country.</br></p>
+        <a href="/"><button type="button" class="key_error_button">Go Home</button></a>
+    <footer>
+        <p class="foot">&copy; 2024 Copyright: All Rights Reserved | Developed by <NAME><b>Sulaimon Abodunrin</b></NAME></p>
+        <p class="portfolio">Final Project | CS50 Introduction to Computer Science</p>
+    </footer>
+</body>
+</html>

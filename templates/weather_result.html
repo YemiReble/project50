@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="static/styles/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/style2.css')}}">
+    <!-- <link rel="shortcut icon" href="static/img/icon.ico"> -->
+    <link rel="shortcut icon" type="icon" href="{{url_for('static', filename='img/icon.ico')}}">
+    <!-- <script src="scripts/"></script> Yet to be completed -->
+    <title>Weather</title>
+</head>
+<body class="bg">
+    <header>
+        <div class="header_container">
+            <h1>Weather Today</h1>
+            <div class="dropdown">
+                 <p class="dropbtn">Portfolio<i class="fa fa-caret-down"></i></p>
+                    <div class="dropdown-content">
+                        <a href="https://github.com/yemireble/project50"><h3 class="readme">GitHub</h3></a>
+                    </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <section class="sections">
+            <article class="container1">
+                <h2 id="font">Weather<br>Today</h2>
+                <!--When the search button is clicked my the user, the search request will be sent to the file styles (temporaryly) -->
+                <form action="/search/" method="get" class="search-bar">
+                    <input type="text" placeholder="Search Any Location" name="q">
+                    <button type="submit"><img class="search_img" src="{{url_for('static', filename='img/web-search.png')}}" alt=""></button>
+                    <button type="submit" class="button2">Search</button>
+                    <div class="country">
+                        <p>{{ country }}</p>
+                    </div>
+                </form>
+            </article>
+            <article class="container2">
+                <h2 id="font">Current<br>Weather</h2>
+                <!-- To add image source later -->
+                <img src="{{url_for('static', filename='img/sky-icon-2.png')}}" alt="{{url_for('static', filename='img/sky-icon-3.png')}}">
+                <p class="weather_status"> {{ description }} </p>
+                <p class="current_weather">{{ temperature }}<b>°C</b></p>
+                <p class="location"> {{ city }} </p>
+            </article>
+            <article class="container3">
+                <h2 id="font">Weather<br>Reports</h2>
+                <!-- Some List of Weather Forecast Here! -->
+                <div class="box1">
+                    <p class="tmep">Temperature</p>
+                    <p class="min">Min</p>
+                        <div class="min_value_box1">
+                            <p class="min_value">{{min_temp}}°C</p>
+                        </div>
+                    <p class="max">Max</p>
+                        <div class="max_value_box2">
+                            <p class="max_value">{{max_temp}}°C</p>
+                        </div>
+                    <p class="feels_like">Feels Like</p>
+                        <div class="feels_like_box3">
+                            <p class="feels_like_value">{{feels_like}}°C</p>
+                        </div>
+                </div>
+                <div class="box2">
+                    <p class="sunrise">Sunrise</p>
+                    <div class="sunrise_box">
+                        <p>{{sunrise}}</p>
+                    </div>
+                    <p class="sunset">Sunset</p>
+                    <div class="sunset_box">
+                        <p>{{sunset}}</p>
+                    </div>
+                    <p class="pressure">Pressure</p>
+                    <div class="pressure_box">
+                        <p>{{pressure}}</p>
+                    </div>
+                    <p class="humidity">Humidity</p>
+                    <div class="humidity_box">
+                        <p>{{humidity}}%</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+    <footer>
+        <p class="foot">&copy; 2024 Copyright: All Rights Reserved | Developed by <NAME><b>Sulaimon Abodunrin</b></NAME></p>
+        <p class="portfolio">Final Project | CS50 Introduction to Computer Science</p>
+    </footer>
+</body>
+</html>
