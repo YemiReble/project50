@@ -3,6 +3,9 @@
 - [x] Location Search
 - [x] Weather Reports
 
+## Project Video
+![Click here for Video Demo:](https://youtu.be/h1R2k7c_HdE)
+
 ## Introduction
 This weather app was inspired by the current weather situation. It uses the OpenWeatherMap API to display up-to-date weather information for any location in the world. The app provides current weather conditions and weather reports. 
 
