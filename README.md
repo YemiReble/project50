@@ -53,14 +53,11 @@ $ code helper/functions.py
 
 ## User Interface Display
 ##### Search Section
-![The Search Area](https://github.com/YemiReble/Weather_web_Application/blob/master/weather_web_flask/static/img/Search_Area.JPG)
+![The Search Area](https://github.com/YemiReble/project50/blob/master/static/img/Search_Area.JPG)
 
 #### Current Weather Section
-![Current Weater](https://github.com/YemiReble/Weather_web_Application/blob/master/weather_web_flask/static/img/Current_weather_display.JPG)
+![Current Weater](https://github.com/YemiReble/project50/blob/master/static/img/Current_weather_display.JPG)
 
 ##### Report Section
-![Report Section](https://github.com/YemiReble/Weather_web_Application/blob/master/weather_web_flask/static/img/Weather_Reports.JPG)
-
-##### Full page View
-![Full Page View](https://github.com/YemiReble/Weather_web_Application/blob/master/weather_web_flask/static/img/Full_Home_Page.JPG)
+![Report Section](https://github.com/YemiReble/project50/blob/master/static/img/Weather_Reports.JPG)
 
