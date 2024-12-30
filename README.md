@@ -1,4 +1,4 @@
-# Weather Web Application
+# Weather Web Application (CS50 FINAL PROJECT)
 - [x] Daily Weather Status
 - [x] Location Search
 - [x] Weather Reports
