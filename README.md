@@ -23,7 +23,7 @@ The weather app is a valuable tool for anyone who wants to stay informed about t
 
 ## How To Use This Program
 Make sure that the requirements to run this program is avalable on your machine, kindly see the
-[reqirements.txt](https://github.com/YemiReble/project50/blob/master/requirments.txt) file if you haven't.
+[reqirements.txt](https://github.com/YemiReble/project50/blob/main/requirments.txt) file if you haven't.
 Done? Okay! Now that you have all the requirements in place, you may proceed to the following steps.
 
 This program runs on port 6556 by default, kindly ensure that port 6556 is available or you may change it to your desired port(s). You may use the auto start sever file to run the program on port 5000.
@@ -46,7 +46,7 @@ http://127.0.0.1:5000
 ```
 Your browser should display the Weather Application Home Page as shown below
 ###### If You Encounter An Error
-Obtaine OpenWeatherMap API Key and insert it in the required file on line (8)
+Obtaine [OpenWeatherMap API](https://openweathermap.org/api) Key and insert it in the required file on line (8)
 ```
 $ code helper/functions.py
 ```
